@@ -6,6 +6,14 @@ const cors = require('cors');
 const port= 2121;
 let Total_user=20;
 
+//Server side database information
+//Incr(number);
+//car_wash(username,password,name,user_type,booking_req,shop_name,mobile_no,age) username=primarykey
+// location(username,state,city,area,building_name,house_no,pincode) username=foreign key
+// username as user_ID ,washing_status has not,washing,completed
+// normal_username(username,washing_status,bookingType default car,shop_id,OTP default 000,Timing default 00)
+//Booking status has three values washing,not,completed;
+//servicer_history(username,customer_name,customer_id,bookingType,timing,washing_status)
 app.use(ex.static(path.join(__dirname,'public')));
 app.use(ex.json());
 app.use(ex.urlencoded({extended:true}));
