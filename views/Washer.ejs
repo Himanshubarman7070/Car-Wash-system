@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash</title>
+    <link rel="stylesheet"  href="Washer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="body-container">
+        <div class="profile-container" id="profile">
+         <div class="image"><img src="/Images/profile-1.jpeg" class="imy"></div>
+         <div class="profile-name"><%= name %></div>
+         <div class="profile-name">ID:<%= username %></div>
+         <div class="contact ">91+ <%= obj.mobile %></div>
+         <div class="location"><div class="loc"><i class="fa-solid fa-location-dot"></i>
+             <%= obj.area %> <%= obj.city %> <%= obj.state %> <%= obj.pincode %></div></div>
+         <div class="order"> 3 car in current washing</div>     
+     </div> 
+     
+       <div class="homy" id="homy" >
+        <div id="change-nav">
+        <div class="nav" id="nav">
+            <div class="nav-element" id="home" onclick="home()" >Home</div>
+            <div class="nav-element" onclick="Bookings()" id="nav-book">Bookings</div>
+            <div class="nav-element" id="history" onclick="history()">Completed</div>
+            <div class="nav-element" id="prices" onclick="prices()">Cancled</div>
+        </div>
+        </div>
+        <div class="req">
+            <div class="text">Current Bookings</div>
+            <div class="car" id="car1">
+                <div class="customer-name" id="c_name1"></div>
+                <div class="type" id="c_bookingType1"></div>
+                <div class="model" id="u_id1"></div>
+                 <div class="date" id="bookingTime1"></div>
+                <div class="done"></div> 
+            </div>
+            <div class="car" id="car2">
+        
+            </div>
+            <div class="car" id="car3">
+
+            </div>
+           
+       </div>
+       <div class="booking-requests">
+        <div class="text" class="text2">Booking requests</div>
+        <div class="car" id="cars">
+         </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        let username = "<%= username %>";
+    </script>
+    <script src="/JavaScript/Washer.js"></script>
+</body>
+</html>

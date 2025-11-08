@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+
+        <div id="nav">
+          <div class="nav2" ><button><pre class="home"><i class="fa-solid fa-house"></i> Home</pre></button></div>
+          <div class="nav2" ><button><pre class="prices"><i class="fa-solid fa-money-check-dollar"></i> Prices</pre></button></div>
+          <div class="nav2" ><button><pre class="history"><i class="fa-solid fa-clock-rotate-left"></i> History</pre></button></div>
+          <div class="nav2"><button><pre class="about"><i class="fa-solid fa-circle-info"></i> About</pre></button></div>
+          <div class="navy">
+           <div class="navy2" id="navy2">No any vehicle order to wash</div>
+          </div>
+          <div class="liny"><div class="line">.</div></div>
+        </div>
+        
+        <div class="homy" id="homy">
+        <div class="top-nav">
+            <div class="top-nav-item" id="Car" onclick="bookingTypeCar()">Car</div>
+            <div class="top-nav-item" id="Scooty" onclick="bookingTypeScooty()">Scooty</div>
+            <div class="top-nav-item" id="Motorcycle" onclick="bookingTypeMotorcycle()">Motorcycle</div>
+            <div class="your-id">Your id:<div id="uid"> <%= username %></div></div>
+        </div>
+           
+        <div class="servicer">
+            <div class="profile"><img src="/Images/profile-1.jpeg">
+                <div class="nama"><p class="nam">Yadav car washing </p></div><br>
+               <div class="loc"> <p class="location"><i class="fa-solid fa-location-dot"></i> 
+                Gandhi nagar aireport road bhopal madhya pradesh 462036</p></div><br>
+                <div class="but"><button class="con">Contact</button></div>
+            </div>
+            <div class="profile"><img src="/Images/profile-2.webp">
+                <div class="nama"><p class="nam">Yadav car washing </p></div><br>
+               <div class="loc"> <p class="location"><i class="fa-solid fa-location-dot"></i> 
+                Gandhi nagar aireport road bhopal madhya pradesh 462036</p></div><br>
+                <div class="but"><button class="con">Contact</button></div>
+            </div>
+            <div class="profile"><img src="/Images/profile-3.jpg">
+                <div class="nama"><p class="nam">Yadav car washing </p></div><br>
+               <div class="loc"> <p class="location"><i class="fa-solid fa-location-dot"></i>
+                 Gandhi nagar aireport road bhopal madhya pradesh 462036</p></div><br>
+                <div class="but"><button class="con">Contact</button></div>
+            </div>
+        </div>
+          <div class="order">
+            <div class="text">Your current location</div>
+            <div class="text2"><i class="fa-solid fa-location-dot"></i>
+              <%= obj.area %> <%= obj.city %> <%= obj.state %> <%= obj.pincode %> <br> +91 <%= obj.mobile %></div>
+            <div class="order2" id="order2">
+                <div class="your-loc">
+              <pre class="ff"><i class="fa-solid fa-location-dot"></i> Location</pre></div>
+                <div ><button class="book" id="book" onclick="booking()">Book</button></div>
+            </div>
+          </div>
+          <div class="dyna2"><div class="dyna" id="dyna"></div></div>
+        </div>
+        
+    </div>
+    <script>
+    let username= '<%= username %>';
+    </script>
+    <script src="/JavaScript/Home.js"></script>
+</body>
+</html>

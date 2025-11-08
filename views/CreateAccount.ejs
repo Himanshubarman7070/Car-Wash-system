@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash</title>
+    <link rel="stylesheet" href="CreateAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="container">
+            <form action="/submit" method="POST">
+          <div class="car"><i class="fa-solid fa-car-side"></i>  Car Wash</div>
+          <div class="information">Enter your details for sign up</div>
+
+          <div class="head1">
+            <input type="text" placeholder="    Full name" class="name" name="Name" required>
+            <input type="number" id="age" placeholder="    Mobile no." name="mobile_no">
+            <div class="user_type">You have a car wash shop <label><br><input type="radio"  id="shop"
+             name="shop" value="servicer" required> Yes </label>
+             <label><input type="radio" id="no" name="shop" value="normal" required>No</label>
+            </div>
+            <input type="text" placeholder="    Shop name" id="shopy" name="shop_name">
+        </div>
+
+        <div class="loc">Address</div>
+
+        <div class="head2">
+            <input type="text" placeholder="    State" class="name" name="state" required>
+            <input type="text" placeholder="    City" class="name" name="city" required>
+            <input type="text" placeholder="    Area" class="name" name="area" required>
+            <input type="text" placeholder="    Building name" class="name" name="building_name">
+        </div>
+
+        <div class="head3">
+            <input type="number" placeholder="    House no." class="name" name="house_no">
+            <input type="number" placeholder="    Pincode" class="name" name="pincode" required>
+            <input type="number" placeholder="    Age" class="name" name="age" required>
+            <input type="number" placeholder="    Set password" class="name" name="password" required>
+        </div>
+        <div class="bt"><button class="btt" type="submit">Submit</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
